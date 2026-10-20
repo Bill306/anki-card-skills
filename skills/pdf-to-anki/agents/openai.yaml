@@ -1,0 +1,4 @@
+interface:
+  display_name: "PDF → Anki 制卡"
+  short_description: "读懂 PDF、按知识点拆卡、保留来源并导出可导入 Anki 的牌组"
+  default_prompt: "使用 $pdf-to-anki，把这份 PDF 转成带页码来源的高质量卡片，完成复核并交付可导入 Anki 的 .apkg。"

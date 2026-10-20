@@ -1,0 +1,72 @@
+{
+  "anki_backend_version": "26.9.3",
+  "checks": [
+    {
+      "check": "out_of_range_source_page",
+      "status": "PASS"
+    },
+    {
+      "check": "missing_source_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "duplicate_question",
+      "status": "PASS"
+    },
+    {
+      "check": "uncovered_included_concept",
+      "status": "PASS"
+    },
+    {
+      "check": "multiple_cloze_targets",
+      "status": "PASS"
+    },
+    {
+      "check": "media_path_escape",
+      "status": "PASS"
+    },
+    {
+      "check": "preserve_existing_output",
+      "status": "PASS"
+    },
+    {
+      "check": "multiple_question_warning",
+      "status": "PASS"
+    },
+    {
+      "check": "math_operators_case_and_html_escaping_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "scan_page_flagged_and_all_pages_rendered",
+      "status": "PASS"
+    },
+    {
+      "check": "stable_guids_after_answer_edit",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_anki_backend_import_12_notes_12_cards",
+      "status": "PASS"
+    },
+    {
+      "check": "basic_and_cloze_fronts_hide_answers",
+      "status": "PASS"
+    },
+    {
+      "check": "packaged_image_imported_byte_identical",
+      "status": "PASS"
+    },
+    {
+      "check": "reimport_does_not_duplicate",
+      "status": "PASS"
+    },
+    {
+      "check": "answer_edit_updates_existing_note",
+      "status": "PASS"
+    }
+  ],
+  "real_user_collection_accessed": false,
+  "semantic_review": "Agent read all 4 PDF page images and reviewed all 12 cards; not an independent educational benchmark.",
+  "scope_limit": "Synthetic fixture, Basic/Cloze only. One deliberately unavailable source fact remains blocked."
+}

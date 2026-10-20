@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "deck": {
+    "id": "fixture.lumabox.pdf.v1",
+    "name": "PDF→Anki 测试::LumaBox"
+  },
+  "sources": [
+    {
+      "id": "pdf-7d6f528a6fc99120",
+      "sha256": "7d6f528a6fc99120b6ec4813a7f57a105db2b0ed1639d62755f69ee37ccfdcb8",
+      "page_count": 4,
+      "title": "LumaBox 虚构课堂笔记（含扫描页）"
+    }
+  ],
+  "status": "PARTIAL_SOURCE_COVERAGE",
+  "semantic_review": "Requires Agent/source review; not established by this script.",
+  "warnings": [],
+  "blocked_concepts": [
+    {
+      "id": "maximum-rate",
+      "title": "最大吞吐量具体数值",
+      "disposition": "blocked",
+      "reason": "原文明确未提供；保留缺口，不捏造数值。需补充真实规格来源。",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "excluded_concepts": [
+    {
+      "id": "repeated-cache",
+      "title": "第4页重复的缓存断电提醒",
+      "disposition": "excluded",
+      "reason": "与 cache-power 重复，合并至同一考点。",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "included_concept_count": 12,
+  "card_guids": {
+    "cache-purpose": "m?WRqW>W>)",
+    "archive-purpose": "w;4SyL7aQO",
+    "cache-power": "IS,3YKAgq0",
+    "archive-power": "FL}|)w6&R_",
+    "write-order": "l?<)H5rT2_",
+    "persist-condition": "h5Gz>6KW#M",
+    "checksum-length": "F8wewN>@Cq",
+    "checksum-boundary": "r`&!X-4g09",
+    "recovery-condition": "G}Bmq~-[_3",
+    "both-corrupt": "s<MJ8wW&_~",
+    "measured-rate": "x|O9@_}Yv~",
+    "measurement-limit": "kM)}fF/m@K"
+  },
+  "verification": {
+    "notes": 12,
+    "cards": 12,
+    "media": 1,
+    "zip_integrity": "passed",
+    "sqlite_integrity": "passed",
+    "new_cards_only": true
+  },
+  "input_sha256": "ed87e44998cf05351e1d2b4c9852bf044601c91ac8d9ed4cc6ca4e81ecc2863a",
+  "apkg_sha256": "91d84d8bca164670592dd311405632995765706a5b8d469935e187359a4b5406",
+  "versions": {
+    "genanki": "0.13.1",
+    "PyMuPDF": "1.28.2"
+  }
+}

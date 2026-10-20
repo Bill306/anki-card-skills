@@ -1,0 +1,13 @@
+NoteType	Id	Front	Back	Extra	Sources	Tags
+PDF2Anki Basic v1	cache-purpose	在 LumaBox 中，缓存层用于哪类数据存取？	快速、临时的数据存取。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.1	LumaBox 测试资料
+PDF2Anki Basic v1	archive-purpose	在 LumaBox 中，归档层用于哪类数据保存？	长期保存。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.1	LumaBox 测试资料
+PDF2Anki Cloze v1	cache-power	LumaBox 断电后，缓存层的数据会{{c1::丢失}}。			LumaBox 虚构课堂笔记（含扫描页） — PDF p.1	LumaBox 测试资料
+PDF2Anki Basic v1	archive-power	LumaBox 断电后，归档层的数据会怎样？	仍保留。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.1	LumaBox 测试资料
+PDF2Anki Basic v1	write-order	LumaBox 写入数据的三个步骤依次是什么？	进入缓存 → 完成校验 → 写入归档。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.2	LumaBox 测试资料
+PDF2Anki Basic v1	persist-condition	LumaBox 在完成哪一步后，才将数据标记为已持久保存？	完成写入归档后。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.2	LumaBox 测试资料
+PDF2Anki Cloze v1	checksum-length	LumaBox 的校验码长度为 {{c1::16}} 位。			LumaBox 虚构课堂笔记（含扫描页） — PDF p.3	LumaBox 测试资料
+PDF2Anki Basic v1	checksum-boundary	LumaBox 校验码能对数据损坏提供什么能力？	检测损坏；不能单靠校验码恢复已损坏的数据。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.3	LumaBox 测试资料
+PDF2Anki Basic v1	recovery-condition	LumaBox 的一份副本损坏时，要从另一副本恢复，另一副本必须满足什么条件？	另一份副本必须完整。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.3	LumaBox 测试资料
+PDF2Anki Basic v1	both-corrupt	LumaBox 两份副本都损坏时，依靠这两份副本能得到什么恢复结果？	不能依靠这两份副本恢复数据。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.3	LumaBox 测试资料
+PDF2Anki Basic v1	measured-rate	LumaBox 示例测量中，80 MiB 数据在 4 秒内完成写入，平均写入速率是多少？	"20 MiB/秒。<img alt=""Source illustration"" src=""pdfanki_eb0576bba93eb51f5adc4659afea45c4dd3d664ce8f99f0f9b406945a006e891.png"">"	80 ÷ 4 = 20；单位为 MiB/秒。仅描述这次测量。	LumaBox 虚构课堂笔记（含扫描页） — PDF p.4	LumaBox 测试资料
+PDF2Anki Basic v1	measurement-limit	从 LumaBox 示例的 20 MiB/秒测量值，能对系统最大吞吐量作何判断？	不能将该测量值视为最大吞吐量；资料未提供最大吞吐量数值。		LumaBox 虚构课堂笔记（含扫描页） — PDF p.4	LumaBox 测试资料

@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "deck": {
+    "id": "fixture.lumabox.pdf.v1",
+    "name": "PDF→Anki 测试::LumaBox"
+  },
+  "sources": [
+    {
+      "id": "pdf-7d6f528a6fc99120",
+      "sha256": "7d6f528a6fc99120b6ec4813a7f57a105db2b0ed1639d62755f69ee37ccfdcb8",
+      "page_count": 4,
+      "title": "LumaBox 虚构课堂笔记（含扫描页）"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "cache-purpose",
+      "title": "缓存用途",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archive-purpose",
+      "title": "归档用途",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cache-power",
+      "title": "缓存断电行为",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archive-power",
+      "title": "归档断电行为",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "write-order",
+      "title": "写入顺序",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "persist-condition",
+      "title": "持久化条件",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checksum-length",
+      "title": "校验码长度",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checksum-boundary",
+      "title": "校验的能力边界",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovery-condition",
+      "title": "恢复所需副本条件",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "both-corrupt",
+      "title": "冗余恢复的失败边界",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "measured-rate",
+      "title": "测量平均速率",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "measurement-limit",
+      "title": "测量结果的推断边界",
+      "disposition": "included",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeated-cache",
+      "title": "第4页重复的缓存断电提醒",
+      "disposition": "excluded",
+      "reason": "与 cache-power 重复，合并至同一考点。",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maximum-rate",
+      "title": "最大吞吐量具体数值",
+      "disposition": "blocked",
+      "reason": "原文明确未提供；保留缺口，不捏造数值。需补充真实规格来源。",
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "cache-purpose",
+      "type": "basic",
+      "question": "在 LumaBox 中，缓存层用于哪类数据存取？",
+      "answer": "快速、临时的数据存取。",
+      "explanation": "",
+      "concept_ids": [
+        "cache-purpose"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ],
+          "evidence": "缓存层用于快速临时存取；断电后缓存数据丢失。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "archive-purpose",
+      "type": "basic",
+      "question": "在 LumaBox 中，归档层用于哪类数据保存？",
+      "answer": "长期保存。",
+      "explanation": "",
+      "concept_ids": [
+        "archive-purpose"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ],
+          "evidence": "归档层用于长期保存；断电后归档数据仍保留。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "cache-power",
+      "type": "cloze",
+      "question": "LumaBox 断电后，缓存层的数据会{{c1::丢失}}。",
+      "answer": "",
+      "explanation": "",
+      "concept_ids": [
+        "cache-power"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ],
+          "evidence": "断电后缓存数据丢失。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "archive-power",
+      "type": "basic",
+      "question": "LumaBox 断电后，归档层的数据会怎样？",
+      "answer": "仍保留。",
+      "explanation": "",
+      "concept_ids": [
+        "archive-power"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            1
+          ],
+          "evidence": "断电后归档数据仍保留。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "write-order",
+      "type": "basic",
+      "question": "LumaBox 写入数据的三个步骤依次是什么？",
+      "answer": "进入缓存 → 完成校验 → 写入归档。",
+      "explanation": "",
+      "concept_ids": [
+        "write-order"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            2
+          ],
+          "evidence": "写入顺序：进入缓存 → 完成校验 → 写入归档。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "persist-condition",
+      "type": "basic",
+      "question": "LumaBox 在完成哪一步后，才将数据标记为已持久保存？",
+      "answer": "完成写入归档后。",
+      "explanation": "",
+      "concept_ids": [
+        "persist-condition"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            2
+          ],
+          "evidence": "只有完成写入归档，数据才被标记为已持久保存。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "checksum-length",
+      "type": "cloze",
+      "question": "LumaBox 的校验码长度为 {{c1::16}} 位。",
+      "answer": "",
+      "explanation": "",
+      "concept_ids": [
+        "checksum-length"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ],
+          "evidence": "校验码长度为 16 位。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "checksum-boundary",
+      "type": "basic",
+      "question": "LumaBox 校验码能对数据损坏提供什么能力？",
+      "answer": "检测损坏；不能单靠校验码恢复已损坏的数据。",
+      "explanation": "",
+      "concept_ids": [
+        "checksum-boundary"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ],
+          "evidence": "校验用于检测数据损坏；不能单靠校验码恢复数据。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "recovery-condition",
+      "type": "basic",
+      "question": "LumaBox 的一份副本损坏时，要从另一副本恢复，另一副本必须满足什么条件？",
+      "answer": "另一份副本必须完整。",
+      "explanation": "",
+      "concept_ids": [
+        "recovery-condition"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ],
+          "evidence": "其中一份损坏且另一份完整时，可从完整副本恢复。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "both-corrupt",
+      "type": "basic",
+      "question": "LumaBox 两份副本都损坏时，依靠这两份副本能得到什么恢复结果？",
+      "answer": "不能依靠这两份副本恢复数据。",
+      "explanation": "",
+      "concept_ids": [
+        "both-corrupt"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            3
+          ],
+          "evidence": "两份副本都损坏时，不能依靠这两份副本恢复。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    },
+    {
+      "id": "measured-rate",
+      "type": "basic",
+      "question": "LumaBox 示例测量中，80 MiB 数据在 4 秒内完成写入，平均写入速率是多少？",
+      "answer": "20 MiB/秒。",
+      "explanation": "80 ÷ 4 = 20；单位为 MiB/秒。仅描述这次测量。",
+      "concept_ids": [
+        "measured-rate"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ],
+          "evidence": "本次平均写入速率 = 80 MiB / 4 秒 = 20 MiB/秒。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": [
+        "prepared/pages/pdf-7d6f528a6fc99120-p0004.png"
+      ]
+    },
+    {
+      "id": "measurement-limit",
+      "type": "basic",
+      "question": "从 LumaBox 示例的 20 MiB/秒测量值，能对系统最大吞吐量作何判断？",
+      "answer": "不能将该测量值视为最大吞吐量；资料未提供最大吞吐量数值。",
+      "explanation": "",
+      "concept_ids": [
+        "measurement-limit"
+      ],
+      "source_refs": [
+        {
+          "source_id": "pdf-7d6f528a6fc99120",
+          "pages": [
+            4
+          ],
+          "evidence": "这个测量值不能视为系统的最大吞吐量。最大吞吐量：本资料没有提供该数值。"
+        }
+      ],
+      "tags": [
+        "LumaBox",
+        "测试资料"
+      ],
+      "front_media": [],
+      "back_media": []
+    }
+  ]
+}
