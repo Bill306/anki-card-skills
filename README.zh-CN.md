@@ -4,6 +4,14 @@
 
 把读过的材料，变成真正能拿来复习的 Anki 卡片。
 
+**[浏览示例卡片](examples/lumabox/output/review.md)** · **[下载 Anki 牌组](https://github.com/Bill306/anki-card-skills/raw/refs/heads/main/examples/lumabox/output/deck.apkg)** · **[产品决策与使用导览](https://github.com/Bill306/Bill306/blob/main/projects/anki/README.zh-CN.md)**
+
+## 花一分钟查看作品
+
+打开[四页来源 PDF](examples/lumabox/lumabox-test.pdf)，再查看[卡片、答案与来源页码](examples/lumabox/output/review.md)。仓库中的 LumaBox 教学对象为虚构内容，原文已有标注。[覆盖记录](examples/lumabox/output/audit.json)还保留了一个资料无法回答的问题。下载 `.apkg` 后，通过 Anki「文件 → 导入」打开现有的 12 张示例卡片。
+
+[产品案例](https://github.com/Bill306/Bill306/blob/main/projects/anki/README.zh-CN.md)说明三项设计选择：答案保留证据、资料缺口保持可见、修订卡片时保留身份。来源与审阅稿可以在 GitHub 阅读；导入需要 Anki，使用自己的资料制卡需要已安装的 Skill 和 Agent。
+
 ![通过仓库示例卡片生成的审阅页面](docs/images/preview.png)
 
 这是一套给 AI Agent 使用的中文 Skill：先理解 PDF 的正文、图表和扫描页，提炼知识点，再生成带页码来源的问答卡或填空卡，复核后导出 `.apkg`。
@@ -12,7 +20,7 @@
 
 ## 它解决什么问题
 
-直接要求 AI “把这份 PDF 变成卡片”，容易得到过长答案、重复考点、一张卡问几个问题，或没有来源的结论。本 Skill 把阅读、知识点筛选、拆卡、核对和导出分开，让生成结果可以检查、修改和重新打包。
+直接要求 AI “把这份 PDF 变成卡片”，容易得到过长答案、重复考点、一张卡问几个问题，或没有来源的结论。本 Skill 将阅读、知识点筛选、组织卡片、核对和导出安排为明确的步骤，让生成结果可以检查、修改和重新打包。
 
 它需要由当前 Agent 阅读并制卡。随附 Python 脚本负责 PDF 预处理、数据校验和 Anki 打包；它不是一个脱离 Agent 后会自动生成内容的独立 App，也不需要 Memo 账号或专用模型 API。
 

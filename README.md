@@ -4,6 +4,14 @@
 
 Reading something once feels good. Remembering it next month feels better.
 
+**[Browse the sample cards](examples/lumabox/output/review.md)** · **[Download the Anki deck](https://github.com/Bill306/anki-card-skills/raw/refs/heads/main/examples/lumabox/output/deck.apkg)** · **[Product decisions and walkthrough](https://github.com/Bill306/Bill306/blob/main/projects/anki/README.md)**
+
+## Explore in a minute
+
+Open the [four-page source PDF](examples/lumabox/lumabox-test.pdf), then inspect the [cards, answers, and page references](examples/lumabox/output/review.md). The included LumaBox teaching example is fictional and labeled in the source. Its [coverage audit](examples/lumabox/output/audit.json) also shows a source question that remains unanswered. Downloading the `.apkg` lets you import the 12-card sample into Anki through File → Import.
+
+The [product case](https://github.com/Bill306/Bill306/blob/main/projects/anki/README.md) explains three choices: answers with evidence, visible source gaps, and stable identity when revising cards. You can browse the source and review on GitHub; importing requires Anki, and generating your own cards requires the installed Skill and an Agent.
+
 ![A generated review of the included example cards](docs/images/preview.png)
 
 ```mermaid
