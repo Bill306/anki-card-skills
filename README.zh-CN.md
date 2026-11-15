@@ -4,6 +4,8 @@
 
 把读过的材料，变成真正能拿来复习的 Anki 卡片。
 
+![通过仓库示例卡片生成的审阅页面](docs/images/preview.png)
+
 这是一套给 AI Agent 使用的中文 Skill：先理解 PDF 的正文、图表和扫描页，提炼知识点，再生成带页码来源的问答卡或填空卡，复核后导出 `.apkg`。
 
 **[阅读完整制卡规则](skills/pdf-to-anki/references/card-rules.md)** · **[查看 Skill](skills/pdf-to-anki/SKILL.md)** · **[下载示例牌组](examples/lumabox/output/deck.apkg)** · **[验证说明](docs/verification.md)**

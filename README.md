@@ -4,6 +4,8 @@
 
 Reading something once feels good. Remembering it next month feels better.
 
+![A generated review of the included example cards](docs/images/preview.png)
+
 ```mermaid
 flowchart LR
   A[PDF and source pages] --> B[Agent reads and writes cards]
